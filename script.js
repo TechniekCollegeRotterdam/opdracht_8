@@ -1,0 +1,14 @@
+let geboortejaar = prompt("Wat is je geboortejaar?");
+let huidigeJaar = new Date().getFullYear();
+let leeftijd = huidigeJaar - geboortejaar;
+document.getElementById("leeftijd").innerText = "je bent ongeveer " + leeftijd + " jaar oud";
+
+function hoi() {
+
+leeftijd +=10;
+document.getElementById("leeftijd").innerText = "je bent ongeveer " + leeftijd + " jaar oud";
+}
+function hooi() {
+    leeftijd -=10;
+    document.getElementById("leeftijd").innerText = "je bent ongeveer " + leeftijd + " jaar oud";
+}
